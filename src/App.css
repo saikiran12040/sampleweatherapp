@@ -1,0 +1,110 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);;
+
+html {
+  font-size: 10px;
+  background: #282c34;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weatherInfo {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 0.5fr repeat(1, 2fr) 2.5fr;
+  border-radius: 1rem;
+  background: rgba(0, 8, 95, 0.6);
+  box-shadow: rgba(60, 234, 255, 0.3) 0rem 0.8rem 3.4rem, rgba(60, 234, 255, 0.1) 0rem 0.8rem 3.4rem, rgba(60, 234, 255, 0.6) 0rem 0.8rem 3.4rem;
+
+}
+.weatherImg{
+  padding-top: 4rem;
+font-size: 10rem;
+  color: rgba(60, 234, 255, 0.8);
+  text-shadow: rgba(60, 234, 255, 0.3) 0rem 0.8rem 3.4rem, rgba(60, 234, 255, 0.1) 0rem 0.8rem 3.4rem, rgba(60, 234, 255, 0.6) 0rem 0.8rem 3.4rem;
+}
+.Search{
+    border: 0.1rem solid rgba(112, 119, 204, 0.1);
+    background: rgba(2, 140, 152, 0.1);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    color: rgba(60, 234, 255, 1);
+    
+}
+.Search:focus{
+  outline: none;
+}
+.Search::placeholder{
+  color: rgba(60, 234, 255, 1);
+}
+.info{
+  font-size: 3.5rem;
+  /* color: rgba(255, 255, 255, 0.8); */
+   color: rgba(60, 234, 255, 1);
+  display: grid;
+  grid-gap: 0rem;
+  padding: 0.1rem;
+  place-items: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.temprature{
+  grid-row: 3/1;
+}
+.country{
+  font-size: 1rem;
+  opacity: 0.9;
+}
+.weatherMood{
+  font-size: 2.5rem;
+}
+
+.btn{
+  background: rgba(60, 234, 255, 0.2);
+  padding: 0.5rem;
+  margin-left: 0.6rem;
+  border: none;
+  border-radius: 0.8rem;
+  color: rgba(60, 234, 255, 1);
+  font-size: 1rem;
+}
+
+
+@media (min-width:320px)  { 
+  html{
+  font-size: 8px;
+}
+}
+@media (min-width: 480px)  { /* smartphones, Android phones, landscape iPhone */ 
+  html{
+  font-size: 12px !important;
+}
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  html{
+  font-size: 18px;
+}
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+html{
+  font-size: 25px;
+}}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  html{
+  font-size: 32px;
+}
+}
+@media (min-width:1349px) { /* hi-res laptops and desktops */ 
+  html{
+  font-size: 37px;
+}
+}
